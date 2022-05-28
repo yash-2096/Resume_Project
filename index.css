@@ -1,0 +1,190 @@
+html{
+height: 100%;                                  /* for mobile view-prevents Overlapping of Scrolling bar and site */ 
+}
+body{
+    background-color:white;
+    margin: 0px;
+    min-height: 100%;                         /* min height of body  */
+}
+
+/* Header Section Starts*/
+#body-header{
+    height: 65vh;
+    background-image: url('./macbook_mouse.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;             /* for making it slide under body */
+    opacity: 0.8;
+    contain: content;
+}
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+}
+.horizontal-list li{
+    display: inline-block;                    /* FOR KEEPING LIST ITEMS IN ONE LINE */
+    margin: 5px 15px 15px 0px;   
+    
+}
+.horizontal-list li a{
+    font-size: 0.9rem;
+    color: paleturquoise;    
+    text-decoration: none;                    /* FOR REMOVING UNDER LINE FROM ANCHOR TAG ITEMS */
+    transition: color 0.8s, border-bottom 4s;
+}
+.horizontal-list li a:hover{
+    color: lavenderblush;
+    border-bottom: 2px solid lavenderblush; 
+}
+.text-center{
+    text-align: center; 
+}
+#name-social-container{
+    font-size: 2rem;
+    color: beige;
+    margin-top: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+#name{   
+margin-bottom: 0px;
+}
+.Socialmedia_Icon li a{
+    position: relative;
+    margin: 0px 10px 10px 0px; 
+}
+.Socialmedia_Icon li a:hover{
+    border-bottom: none;
+}
+
+/* Main Body Starts */
+
+/* Section Css*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: royalblue;
+}
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+/* About Starts*/
+#about{
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+#my-photo{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#my-photo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 6px 4px  lightgrey;
+    /* padding: 200px; */
+}
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+/* Heading and Icon Setting (Skill,Education,Experience,Protfolio)*/
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.section-heading span{
+    font-size: 30px;
+    display: inline-block;
+    color: darkslategrey;
+    /* padding-top: 10px; */
+}
+.mb75{
+    margin-bottom: 75px;
+}
+/* Skill Starts*/
+.skill-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    /* border: 4px solid black; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    display: flex;
+    /* display: inline-block; */
+    flex-wrap: wrap;
+    background-color: grey;
+    text-align: center; 
+    width: 200px;
+    heigth: 50px;
+    /* border-radius: 20%/50%; */
+    border-radius: 5000px;
+    margin: 20px; 
+}
+.Javaskill{
+    width: 140px;
+}
+.JavaScript{
+    width: 50px;
+}
+.ht{
+    width: 180px;
+}
+.Cs{
+    width: 140px;
+}
+.ReactJs{
+    width: 20px;
+}
+.NodeJs{
+    width: 20px;   
+}
+.border-style{
+    height: inherit;
+    background-color: goldenrod;
+    /* sargin-top: 0%; */
+    border-top-left-radius:  5000px;
+    border-bottom-left-radius:  5000px;
+}
+
+/* Footer Section Starts*/
+footer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 50vh;
+    margin-top: auto;
+    text-decoration: none;
+    background: linear-gradient(to right,#2857a4,#403066);
+}
+#footerhead{
+    color: aliceblue;
+}
+footer a{
+    color: aliceblue;
+}
